@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>WebCinemaApp</display-name>
+  <welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>LoginUserServlet</servlet-name>
+    <servlet-class>AllServlets.LoginUserServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>LoginUserServlet</servlet-name>
+    <url-pattern>/user</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>AllServlets.LogoutServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>SigninUserServlet</servlet-name>
+    <servlet-class>AllServlets.SigninUserServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SigninUserServlet</servlet-name>
+    <url-pattern>/signin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ContentAdminServlet</servlet-name>
+    <servlet-class>AllServlets.ContentAdminServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ContentAdminServlet</servlet-name>
+    <url-pattern>/availablefilms</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>InsertFilmServlet</servlet-name>
+    <servlet-class>AllServlets.InsertFilmServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>InsertFilmServlet</servlet-name>
+    <url-pattern>/insertfilm</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>AssignFilmServlet</servlet-name>
+    <servlet-class>AllServlets.AssignFilmServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AssignFilmServlet</servlet-name>
+    <url-pattern>/assignfilm</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>AllServlets.AdminServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/admin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>CustomerServlet</servlet-name>
+    <servlet-class>AllServlets.CustomerServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>CustomerServlet</servlet-name>
+    <url-pattern>/customer</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ReservationHistoryServlet</servlet-name>
+    <servlet-class>AllServlets.ReservationHistoryServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ReservationHistoryServlet</servlet-name>
+    <url-pattern>/reservationhistory</url-pattern>
+</servlet-mapping>
+
+
+</web-app>
